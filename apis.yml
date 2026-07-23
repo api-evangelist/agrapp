@@ -1,7 +1,18 @@
 aid: agrapp
 name: Agrapp
-description: Agrapp is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Agrapp is a Chilean agricultural technology (AgTech) company offering "el
+  cuaderno de campo inteligente" (the intelligent field notebook) — a mobile and
+  web SaaS platform that helps small and medium farmers record, track, and manage
+  their field operations without complex spreadsheets. Founded in 2016 in Santiago
+  and backed by 500 Global, Start-Up Chile, OpenBeauchef, and ChileGlobal Ventures,
+  the platform provides labor and task tracking with per-task cost analysis,
+  inventory and supply (bodega) control, a work calendar, worker attendance and
+  performance monitoring, WhatsApp and email alerts, and agricultural plus financial
+  reporting to support data-driven decisions. It runs on iOS and Android with an
+  offline mode that syncs when connectivity returns. Agrapp does not currently
+  publish a public developer API, SDK, or developer documentation; this profile
+  captures its public web surface, commercial links, and domain security posture.
 url: https://raw.githubusercontent.com/api-evangelist/agrapp/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +20,30 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://s3-us-west-2.amazonaws.com/agrapp-bucket/uploads/images/ad_opengraph.png
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Agriculture
+- AgTech
+- Farm Management
+- SaaS
+- Chile
+- Latin America
+- Mobile
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +53,18 @@ maintainers:
 common:
 - type: Website
   url: https://agrapp.cl
+- type: Pricing
+  url: https://agrapp.cl/planes
+- type: SignUp
+  url: http://unete.agrapp.cl/
+- type: Login
+  url: https://agrapp.cl/users/sign_in
+- type: Support
+  url: mailto:soporte@agrapp.cl
+- type: DomainSecurity
+  url: security/agrapp-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
